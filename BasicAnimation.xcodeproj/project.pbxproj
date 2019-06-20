@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B836838522BB8CAA005F9764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836838422BB8CAA005F9764 /* AppDelegate.swift */; };
-		B836838722BB8CAA005F9764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836838622BB8CAA005F9764 /* ViewController.swift */; };
 		B836838A22BB8CAA005F9764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B836838822BB8CAA005F9764 /* Main.storyboard */; };
 		B836838C22BB8CAD005F9764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B836838B22BB8CAD005F9764 /* Assets.xcassets */; };
 		B836838F22BB8CAD005F9764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B836838D22BB8CAD005F9764 /* LaunchScreen.storyboard */; };
+		B836839722BB8CEF005F9764 /* BasicAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836839622BB8CEF005F9764 /* BasicAnimationView.swift */; };
+		B836839A22BB91C9005F9764 /* BasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836839922BB91C9005F9764 /* BasicAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B836838122BB8CAA005F9764 /* BasicAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B836838422BB8CAA005F9764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B836838622BB8CAA005F9764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B836838922BB8CAA005F9764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B836838B22BB8CAD005F9764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B836838E22BB8CAD005F9764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B836839022BB8CAD005F9764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B836839622BB8CEF005F9764 /* BasicAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationView.swift; sourceTree = "<group>"; };
+		B836839922BB91C9005F9764 /* BasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		B836838322BB8CAA005F9764 /* BasicAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				B836838422BB8CAA005F9764 /* AppDelegate.swift */,
-				B836838622BB8CAA005F9764 /* ViewController.swift */,
+				B836839622BB8CEF005F9764 /* BasicAnimationView.swift */,
+				B836839922BB91C9005F9764 /* BasicAnimationViewController.swift */,
+				B836839822BB8D06005F9764 /* SupportingFiles */,
 				B836838822BB8CAA005F9764 /* Main.storyboard */,
+			);
+			path = BasicAnimation;
+			sourceTree = "<group>";
+		};
+		B836839822BB8D06005F9764 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B836838422BB8CAA005F9764 /* AppDelegate.swift */,
 				B836838B22BB8CAD005F9764 /* Assets.xcassets */,
 				B836838D22BB8CAD005F9764 /* LaunchScreen.storyboard */,
 				B836839022BB8CAD005F9764 /* Info.plist */,
 			);
-			path = BasicAnimation;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B836838722BB8CAA005F9764 /* ViewController.swift in Sources */,
+				B836839722BB8CEF005F9764 /* BasicAnimationView.swift in Sources */,
 				B836838522BB8CAA005F9764 /* AppDelegate.swift in Sources */,
+				B836839A22BB91C9005F9764 /* BasicAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9V3HNK9U9;
-				INFOPLIST_FILE = BasicAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BasicAnimation/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9V3HNK9U9;
-				INFOPLIST_FILE = BasicAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BasicAnimation/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
